@@ -1,0 +1,45 @@
+// Código de Nav acá
+nav{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background-color: @wild-sand;
+    opacity: 80%;
+    padding: 10px;
+    margin-block-end: 5px;
+    border: 2px solid @sea-shell;
+    position: fixed;
+    top:0;
+    width: 100%;
+    h1{
+        font-size: 3rem;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: center;
+        li a{
+            text-decoration: none;
+            padding: 10px;
+            color:@river-bend;
+            font-size: 15px;
+            &:hover{
+                color:white;
+                background-color: @river-bend;
+                border-radius: 5px;
+            }
+        }
+        @media @phone{
+            li a{
+                padding: 5px;
+                font-size: 11px;
+            }
+        }
+    }
+}
+    
